@@ -1,0 +1,364 @@
+body {
+    display: flex;
+}
+
+.box {
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+}
+
+
+/* @media only screen and (max-width: 600px) {
+    .box {
+        position: absolute;
+        right: 0;
+    }
+} */
+
+.box .fb,
+.twit,
+.insta,
+.mail,
+.tele,
+.call {
+    padding: 10px;
+    margin: 10px 0;
+    color: #fff;
+    position: relative;
+    right: -74%;
+    border-radius: 3px;
+    transition: 0.5s;
+    width: 120px;
+    z-index: 2;
+}
+
+.box .fb::after {
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    top: 2px;
+    left: 35px;
+    width: 1px;
+    height: 35px;
+}
+
+.box .insta::after {
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    top: 2px;
+    left: 35px;
+    width: 1px;
+    height: 35px;
+}
+
+.box .twit::after {
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    top: 2px;
+    left: 35px;
+    width: 1px;
+    height: 35px;
+}
+
+.box .mail::after {
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    top: 2px;
+    left: 35px;
+    width: 1px;
+    height: 35px;
+}
+
+.box .tele::after {
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    top: 2px;
+    left: 35px;
+    width: 1px;
+    height: 35px;
+}
+
+.box .call::after {
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    top: 2px;
+    left: 35px;
+    width: 1px;
+    height: 35px;
+}
+
+.box .fb {
+    background-color: #3b5998;
+}
+
+.box .twit {
+    background-color: #1da1f2;
+}
+
+.box .insta {
+    background-color: #c32aa3;
+}
+
+.box .mail {
+    background-color: blueviolet;
+}
+
+.box .tele {
+    background-color: #0088CC;
+}
+
+.box .call {
+    background-color: rgb(47, 231, 255);
+}
+
+.box .fb:hover {
+    right: -5%;
+    background-color: #3b5998;
+}
+
+.box .twit:hover {
+    right: -5%;
+}
+
+.box .insta:hover {
+    right: -5%;
+}
+
+.box .mail:hover {
+    right: -5%;
+}
+
+.box .tele:hover {
+    right: -5%;
+}
+
+.box .call:hover {
+    right: -5%;
+}
+
+.box span {
+    margin-top: -10px;
+    padding-left: 15px;
+}
+
+
+/**************** Login Form ******************/
+
+.login-form {
+    padding: 20px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    margin: auto;
+}
+
+.login-form h2 {
+    text-align: center;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login-form form input {
+    margin: 20px;
+    padding: 10px;
+    width: 350px;
+    border-bottom: 1px solid #444;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+
+.login-form form input[type=submit] {
+    background-color: #f53f85;
+    color: #fff;
+    border: 1px solid #f53f85;
+    font-weight: 900px;
+    width: 90%;
+    transition: 0.5s;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-form form input[type=submit]:hover {
+    color: #f53f85;
+    background-color: #fff;
+}
+
+.login-form .extra {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.login-form .extra span {
+    color: blue;
+}
+
+.login-form .extra p span {
+    padding-left: 5px;
+}
+
+.login-form .or {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.login-form .login-with {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.login-form .login-with span {
+    padding: 10px 0;
+}
+
+.login-form .login-with button {
+    width: 150px;
+    margin: auto;
+    background-color: #fff;
+    color: #4285F4;
+    border: 1px solid #4285F4;
+    padding: 10px;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.login-form .login-with button:hover {
+    background-color: #4285F4;
+    color: #fff;
+}
+
+.login-form button i {
+    padding-left: 15px;
+    font-size: 18px;
+}
+
+
+/************* Login form End *****************/
+
+a {
+    text-decoration: none;
+}
+
+
+/**************** Sign up ******************/
+
+.signup-form {
+    width: 400px;
+    margin: auto;
+    padding: 20px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.signup-form h2 {
+    text-align: center;
+}
+
+.signup-form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.signup-form form input {
+    margin: 20px;
+    padding: 10px;
+    width: 350px;
+    border-bottom: 1px solid #444;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+
+.signup-form form input[type=submit] {
+    background-color: #f53f85;
+    color: #fff;
+    border: 1px solid #f53f85;
+    font-weight: 900px;
+    width: 90%;
+    transition: 0.5s;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.signup-form form input[type=submit]:hover {
+    color: #f53f85;
+    background-color: #fff;
+}
+
+.signup-form .extra {
+    text-align: center;
+}
+
+.signup-form .or {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.signup-form .login-with {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.signup-form .login-with span {
+    padding: 10px 0;
+}
+
+.signup-form .login-with button {
+    width: 150px;
+    margin: auto;
+    background-color: #fff;
+    color: #4285F4;
+    border: 1px solid #4285F4;
+    padding: 10px 0;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.signup-form .login-with button:hover {
+    background-color: #4285F4;
+    color: #fff;
+}
+
+.signup-form button i {
+    padding-left: 15px;
+    font-size: 18px;
+}
+
+
+/************* Signup form End *****************/
+
+
+/***whatsapp***/
+
+.whatsapp-btn img {
+    position: fixed !important;
+    z-index: 10;
+    bottom: 18% !important;
+    left: 20px !important;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.whatsapp-btn img:hover {
+    transform: translateY(-10px);
+}
